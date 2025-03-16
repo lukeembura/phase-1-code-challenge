@@ -1,0 +1,7 @@
+#ramen-menu img {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    margin: 5px; /* Adds spacing between images */
+    cursor: pointer; /* Changes the cursor to indicate the image is clickable */
+}
