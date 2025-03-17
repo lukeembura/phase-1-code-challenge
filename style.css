@@ -19,10 +19,16 @@
 header {
     background-color: antiquewhite;
     text-align: center;
-    padding: 2px;
+    
     width: 100%;
     margin-bottom: 20px;
-    font-size: 8px;
+    
     height: 30px;
 }
 
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
