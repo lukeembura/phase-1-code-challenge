@@ -1,11 +1,11 @@
 const ramens = [
-    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "./shoyu.jpg", rating: 5, comment: "Delicious!" },
+    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "./shoyu.jpg", rating: 10, comment: "Delicious!" },
     { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "./naruto.jpg", rating: 4, comment: "Very flavorful!" },
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "./gyukotsu.jpg", rating: 6, comment: "So creamy!" },
     { id: 4, name: "Kojiiro Ramen", restaurant: "Kajiro", image: "./kojiro.jpg", rating: 7, comment: "Best ramen in town!" },
     { id: 5, name: "Nirvana Ramen", restaurant: "Nivana", image: "./nirvana.jpg", rating: 6, comment: "So good!" },
- ];
- document.addEventListener("DOMContentLoaded", main);
+];
+document.addEventListener("DOMContentLoaded", main);
 
 function displayRamens() {
     const ramenMenu = document.querySelector("#ramen-menu");
@@ -27,7 +27,7 @@ function handleClick(ramen) {
     const ramenDetail = document.querySelector("#ramen-detail");
     ramenDetail.querySelector(".name").textContent = ramen.name;
     ramenDetail.querySelector(".restaurant").textContent = ramen.restaurant;
-    ramenDetail.querySelector(".rating").textContent = ramen.rating || "N/A";
+    ramenDetail.querySelector("#ramen-rating").textContent = `Rating: ${ramen.rating}/10`;
     ramenDetail.querySelector(".comment").textContent = ramen.comment || "No comments available.";
 }
 
@@ -62,4 +62,3 @@ function main() {
     displayRamens();
     addSubmitListener();
 }
- 
