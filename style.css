@@ -5,3 +5,13 @@
     margin: 5px; /* Adds spacing between images */
     cursor: pointer; /* Changes the cursor to indicate the image is clickable */
 }
+
+#ramen-menu .ramen-name{
+    position:absolute;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color:aquamarine;
+    text-align:center;
+    font-size: 10px;
+    padding:
+}
